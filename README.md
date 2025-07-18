@@ -18,11 +18,14 @@ Este visualizador exibe as bandas de frequência em **formato circular**, criand
 
 ## 🖥️ Pré-requisitos (macOS)
 
-Antes de compilar, instale as bibliotecas necessárias com Homebrew. 
+Antes de compilar, instale as bibliotecas necessárias com [Homebrew](https://brew.sh):
 
+```
+brew install sdl2 sdl2_mixer fftw
+```
 ## ⚙️ Compilação
 
-Fiz um arquivo **Makefile** para facilitar a execução então para compilar basta escrever *make* no terminal. 
+Fiz um arquivo **Makefile** para facilitar a execução então para compilar basta escrever ```make``` no terminal. 
 Ou
 Compile manualmente:
 ```
@@ -34,7 +37,9 @@ g++ spectro_radial.cpp -o spectro_radial \
     -framework OpenGL -framework GLUT -lm
 ```
 Depois de compilar, execute com este comando:
+```
 ./spectro_radial musica.mp3
+```
 
 OBS: É necessário um arquivo .mp3 na mesma pasta ou então direcione o caminho para o arquivo no comando.
 
@@ -48,6 +53,6 @@ Este projeto está adaptado especificamente para macOS, incluindo o uso de frame
 
 ## 🧠 Créditos
 
-Inspirado no exemplo fornecido pelo professor, com modificações criativas no estilo de visualização, estrutura e atualização gráfica.
+Inspirado no exemplo fornecido pelo professor Agostinho Brito do curso de Engenharia de Computação da UFRN, com modificações criativas no estilo de visualização, estrutura e atualização gráfica.
 https://github.com/agostinhobritojr/sdlspectrum/
 
