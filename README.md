@@ -17,7 +17,8 @@ Este visualizador exibe as bandas de frequência em **formato circular**, criand
 ---
 
 ## 🖥️ Pré-requisitos (macOS)
-(Para tutorial de como executar no Windows ou Linux, por favor seguir o tutorial feito pelo professor [Agostinho Brito](https://github.com/agostinhobritojr/sdlspectrum/)
+(Para tutorial de como executar no Windows ou Linux, por favor seguir o tutorial feito pelo professor [Agostinho Brito](https://github.com/agostinhobritojr/sdlspectrum/))
+
 Antes de compilar, instale as bibliotecas necessárias com [Homebrew](https://brew.sh):
 
 ```
