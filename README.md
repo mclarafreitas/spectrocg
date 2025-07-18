@@ -55,7 +55,9 @@ Este projeto está adaptado especificamente para macOS, incluindo o uso de frame
 ## ⚠️ Compilação em Linux ou Windows
 
 Se for compilar em Linux ou Windows, será necessário ajustar os headers do código e as bibliotecas da linha de compilação. 
+
 HEADERS:
+
 Substitua:
 
 ```#include <GLUT/glut.h>```   
@@ -66,6 +68,7 @@ Por:
 
 
 COMPILAÇÃO:
+
 Substitua:
 
     -framework OpenGL -framework GLUT
