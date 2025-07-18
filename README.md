@@ -52,6 +52,35 @@ O espectro é desenhado em formato circular, com cada linha representando a inte
 
 Este projeto está adaptado especificamente para macOS, incluindo o uso de frameworks nativos (OpenGL, GLUT) via -framework.
 
+## ⚠️ Compilação em Linux ou Windows
+
+Se for compilar em Linux ou Windows, será necessário ajustar os headers do código e as bibliotecas da linha de compilação. 
+HEADERS:
+Substitua:
+
+```#include <GLUT/glut.h>```   
+
+Por:
+
+```#include <GL/glut.h>```
+
+
+COMPILAÇÃO:
+Substitua:
+
+    -framework OpenGL -framework GLUT
+
+por:
+
+    -lGL -lGLU -lglut
+
+Além disso, os caminhos específicos do macOS:
+
+    -I/opt/homebrew/include -L/opt/homebrew/lib
+
+podem ser removidos ou adaptados conforme a localização das bibliotecas no seu sistema.
+
+
 ## 🧠 Créditos
 
 Inspirado no exemplo fornecido pelo professor Agostinho Brito do curso de Engenharia de Computação da UFRN, com modificações criativas no estilo de visualização, estrutura e atualização gráfica.
